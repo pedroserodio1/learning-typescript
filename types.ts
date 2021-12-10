@@ -38,3 +38,14 @@ function logger(): void{
 
 //null / undefined
 type Bla = string | undefined
+
+//never
+function error(): never{
+    throw new Error("erro")
+}
+
+//object
+let cart: object
+cart ={
+    key: "foo"
+}
